@@ -1,6 +1,6 @@
 @import "./utils/variables";
 @import "./utils/visually-hidden";
-@import "./base/normalalize";
+@import "./vendors/normalize";
 @import "./base/html";
 @import "./base/body";
 @import "./base/img";
@@ -12,7 +12,7 @@
 @import "./layout/btn";
 @import "./layout/logo";
 @import "./layout/header";
-@import "./layout/networcs";
+@import "./layout/networks";
 @import "./components/hero";
 @import "./components/features";
 @import "./components/about";
@@ -20,4 +20,4 @@
 @import "./components/clients";
 @import "./components/portfolio";
 @import "./layout/footer";
-@import "./layout/modal";
+@import "./components/modal";
