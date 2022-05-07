@@ -7,8 +7,6 @@
     align-items: baseline;
 }
 
-
-
 .address__list li:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -19,9 +17,14 @@
     color: var(--white-text-color);
 
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address__link--color {
+
+&--color {
     color: rgba(255, 255, 255, 0.6);
+}
+&:hover,
+&:focus {
+    color: var(--accent-color);
+}
 }
 
 .footer-networks {
@@ -41,12 +44,12 @@
 }
 
 /* ---------------Footer form------------------ */
-.footer-form__container {
-    margin-left: auto;
-}
 
 .footer-form {
     display: flex;
+}
+.footer-form__container {
+    margin-left: auto;
 }
 .footer-form__title {
     display: inline-block;
@@ -57,6 +60,7 @@
     text-transform: uppercase;
     color: var(--white-text-color);
 }
+
 .footer-form__input {
     width: 358px;
     padding: 15px 16px;;
@@ -71,22 +75,24 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
-}
-.footer-form__input::placeholder {
+
+&::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
 
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-form__input:hover::placeholder,
-.footer-form__input:focus::placeholder {
+&:hover::placeholder,
+&:focus::placeholder {
     color: var(--white-text-color);
+}
 }
 .footer-form__btn {
     margin-left: 12px;
-}
-.footer-form__btn--icon {
+
+&--icon {
     display: block;
     margin-left: 10px;
+}
 }
