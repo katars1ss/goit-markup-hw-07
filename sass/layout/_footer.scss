@@ -6,7 +6,6 @@
     display: flex;
     align-items: baseline;
 }
-
 .address__list li:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -16,7 +15,7 @@
     letter-spacing: 0.03em;
     color: var(--white-text-color);
 
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitionAll (color);
 
 &--color {
     color: rgba(255, 255, 255, 0.6);
@@ -26,7 +25,6 @@
     color: var(--accent-color);
 }
 }
-
 .footer-networks {
     margin-left: 70px;
 }
@@ -42,9 +40,7 @@
 .footer-networks__icon {
     fill: currentColor;
 }
-
-/* ---------------Footer form------------------ */
-
+      /* ---------------Footer form------------------ */
 .footer-form {
     display: flex;
 }
@@ -60,7 +56,6 @@
     text-transform: uppercase;
     color: var(--white-text-color);
 }
-
 .footer-form__input {
     width: 358px;
     padding: 15px 16px;;

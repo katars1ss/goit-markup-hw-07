@@ -9,17 +9,17 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
-}
-.logo--deco {
+
+&--deco {
     color: var(--black-text-color);
 }
-
-
+}
 .footer__logo {
     display: inline-block;
     padding: 0;
     margin-bottom: 20px;
-}
-.footer__logo--deco {
+    
+&--deco {
     color: var(--white-text-color);
+}
 }

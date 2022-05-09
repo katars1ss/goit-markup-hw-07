@@ -1,10 +1,8 @@
 .portfolio {
     padding-top:94px;
 }
-
 .portfolio-filter {
-    display: flex;
-    justify-content: center;
+    @include centeredFlex ();
     margin-bottom: 50px;
 }
 .portfolio-filter__item + .portfolio-filter__item {
@@ -23,17 +21,16 @@
     color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitionAll (background-color,color,drop-shadow);
 
 .current,
 &:hover,
-&n:focus {
+&:focus {
     color: var(--white-text-color);
     background-color: var(--accent-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 }
-
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
@@ -48,7 +45,7 @@
     width: 100%;
     height: 100%;
 
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   @include transitionAll (box-shadow);
 
 &:hover,
 &:focus {
@@ -56,18 +53,16 @@
 }
 &:hover .portfolio-card__overlay,
 &:focus .portfolio-card__overlay {
-transform: translateY(0);
+    transform: translateY(0);
 }
 }
 .portfolio-card__item {
-background-color: var(--primery-bg-color);
+    background-color: var(--primery-bg-color);
 }
-
 .portfolio-card__thumb {
     position: relative;
     overflow: hidden;
 }
-
 .portfolio-card__img {
     display: block;
     max-width: 370px;
@@ -90,7 +85,8 @@ background-color: var(--primery-bg-color);
     background: rgba(33, 150, 243, 0.9);
 
     transform: translateY(101%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include transitionAll (transform);
 }
 .portfolio-card__content {
     margin: 0;

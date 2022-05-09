@@ -4,19 +4,15 @@
     border-bottom: 1px solid var(--deco-line-color);
 }
 .header__container {
-    display: flex;
-    align-items: center;
+    @include centeredFlex ();
 }
-
-
-/* ------Site navigation------- */
+            /* ------Site navigation------- */
 .navigation {
     margin-left: 93px;
 }
 .navigation__list {
     display: flex;
 }
-
 .navigation__item:nth-child(n+2) {
     margin-left: 50px;
 }
@@ -32,14 +28,14 @@
     letter-spacing: 0.02em;
 
     color: var(--title-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include transitionAll (color);
 
 &:hover,
 &:focus {
     color: var(--accent-color);
 }
 }
-
 .nav__active {
     color :var(--accent-color);
 }

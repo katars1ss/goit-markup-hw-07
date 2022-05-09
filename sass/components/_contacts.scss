@@ -1,9 +1,7 @@
 /* ---------Contacts-------- */
 
 .contacts__list {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+   @include centeredFlex ();
 }
 .contacts__item + .contacts__item {
     margin-left: 50px;
@@ -21,13 +19,13 @@
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover,
-.contacts__link:focus {
+    @include transitionAll (color);
+
+&:hover,
+&:focus {
     color: var(--accent-color);
 }
-
+}
 .contacts__icon {
     margin-right: 10px;
     fill: currentColor;

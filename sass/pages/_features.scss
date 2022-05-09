@@ -14,9 +14,7 @@
 }
 
 .features__decor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centeredFlex ();
     margin-bottom: var(--card-set-gap);
 
     width: 270px;

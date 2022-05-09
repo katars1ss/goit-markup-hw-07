@@ -7,7 +7,7 @@
 
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transitionAll (opacity);
 
 &.is-hidden {
     opacity: 0;
@@ -31,14 +31,14 @@
     background-color: var(--primery-bg-color);
 
     transform: translate(-50%,-50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include transitionAll (transform);
 }
 .modal__icon {
     width: 18px;
     height: 18px;
 
-    @include transitionAll 
- (fill);
+    @include transitionAll (fill);
 }
 .modal__form {
     width: 448px;
@@ -101,8 +101,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    @include transitionAll 
- (border);
+    @include transitionAll (border);
 &:hover,
 &:focus {
     border: 1px solid var(--accent-color);
@@ -119,8 +118,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include transitionAll 
- (fill);
+    @include transitionAll (fill);
 }
 .form__textarea {
     resize: none;
@@ -149,8 +147,7 @@
 
     border: 2px solid var(--title-text-color);
 
-    @include transitionAll 
- (border-color,bacground-color);
+    @include transitionAll (border-color,bacground-color);
 }
 .checkbox__input {
 &:checked + .checkbox__icon {
@@ -174,8 +171,7 @@
     margin-left: 7px;
     color: var(--accent-color);
 
-    @include transitionAll 
- (color);
+    @include transitionAll (color);
 
 &:hover,
 &:focus {
