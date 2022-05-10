@@ -7,7 +7,7 @@
 
     background: rgba(0, 0, 0, 0.2);
     opacity: 1;
-    @include transitionAll (opacity);
+    @include transitionAll ();
 
 &.is-hidden {
     opacity: 0;
@@ -32,13 +32,13 @@
 
     transform: translate(-50%,-50%) scale(1);
 
-    @include transitionAll (transform);
+    @include transitionAll ();
 }
 .modal__icon {
     width: 18px;
     height: 18px;
 
-    @include transitionAll (fill);
+    @include transitionAll ();
 }
 .modal__form {
     width: 448px;
@@ -59,7 +59,7 @@
     border: 1px solid  rgba(0, 0, 0, 0.1);
     background-color: var(--primery-bg-color);
     cursor: pointer;
-    @include transitionAll (border-color);
+    @include transitionAll ();
 &:hover > svg,
 &:focus > svg {
     fill: var(--accent-color);
@@ -103,7 +103,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    @include transitionAll (border);
+    @include transitionAll ();
 &:hover,
 &:focus {
     border: 1px solid var(--accent-color);
@@ -120,7 +120,7 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include transitionAll (fill);
+    @include transitionAll ();
 }
 .form__textarea {
     resize: none;
@@ -149,8 +149,7 @@
 
     border: 2px solid var(--title-text-color);
 
-    @include transitionAll (border-color);
-    @include transitionAll (bacground-color);
+    @include transitionAll ();
 }
 .checkbox__input {
 &:checked + .checkbox__icon {
@@ -174,7 +173,7 @@
     margin-left: 7px;
     color: var(--accent-color);
 
-    @include transitionAll (color);
+    @include transitionAll ();
 
 &:hover,
 &:focus {

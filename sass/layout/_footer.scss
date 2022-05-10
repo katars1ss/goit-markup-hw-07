@@ -15,7 +15,7 @@
     letter-spacing: 0.03em;
     color: var(--white-text-color);
 
-    @include transitionAll (color);
+    @include transitionAll ();
 
 &--color {
     color: rgba(255, 255, 255, 0.6);
