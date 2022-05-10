@@ -24,7 +24,8 @@
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
 
-    @include transitionAll (border-color,color);
+    @include transitionAll (border-color);
+    @include transitionAll (color);
 &:hover,
 &:focus {
     color: var(--accent-color);

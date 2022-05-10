@@ -58,13 +58,15 @@
     border-radius: 50%;
     border: 1px solid  rgba(0, 0, 0, 0.1);
     background-color: var(--primery-bg-color);
-
     cursor: pointer;
-
+    @include transitionAll (border-color);
 &:hover > svg,
 &:focus > svg {
     fill: var(--accent-color);
 }
+&:hover,
+&:focus {
+    border: 1px solid  var(--accent-color);}
 }
 .form__title {
     margin-bottom: 12px;
@@ -147,7 +149,8 @@
 
     border: 2px solid var(--title-text-color);
 
-    @include transitionAll (border-color,bacground-color);
+    @include transitionAll (border-color);
+    @include transitionAll (bacground-color);
 }
 .checkbox__input {
 &:checked + .checkbox__icon {

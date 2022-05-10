@@ -15,7 +15,8 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--white-text-color);
 
-    @include transitionAll (background-color,color);
+    @include transitionAll (background-color);
+    @include transitionAll (color);
     
 &:hover,
 &:focus {

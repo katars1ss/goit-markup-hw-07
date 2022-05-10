@@ -21,7 +21,9 @@
     color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
 
-    @include transitionAll (background-color,color,drop-shadow);
+    @include transitionAll (background-color);
+    @include transitionAll (color);
+    @include transitionAll (drop-shadow);
 
 .current,
 &:hover,
